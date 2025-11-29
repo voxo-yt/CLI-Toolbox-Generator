@@ -9,7 +9,7 @@ class MainWriter:
         self.template_writer = TemplateWriter(template_root)
 
         self.internal_template = (
-            self.template_root / "Internal_Templates_NotReg" / "main.py.tpl"
+            self.template_root / "Internal_Templates_NotReg" / "cli_main.py.tpl"
         )
 
     def write(
@@ -30,7 +30,7 @@ class MainWriter:
 
         for slug, data in menu_info.items():
             menu_imports.append(
-                f"from menus.{data['module']} import {data['class_name']}"
+                f"from {root_slug}.menus.{data['module']} import {data['class_name']}"
             )
 
             parent_entries.append(f"    '{slug}': {repr(data['parent'])},")
@@ -41,7 +41,7 @@ class MainWriter:
         return self.template_writer.write(
             template_path=self.internal_template,
             target_project_root=Path(project_path),
-            output_rel="main.py",
+            output_rel="cli_main.py",
             menu_imports="\n".join(menu_imports),
             parent_dict="\n".join(parent_entries),
             menu_builder="\n".join(builder_entries),

@@ -22,7 +22,7 @@ Your generated project is organized as follows:
 ```
 {{project_name}}/
 │
-├── main.py                       ← CLI entrypoint
+├── cli_main.py                       ← CLI entrypoint | Move it into your main project's root
 │
 ├── menus/                        ← Auto-generated menu classes
 │    ├── <root_name>_menu.py    ← Root menu (named after your root menu)
@@ -42,19 +42,19 @@ Your generated project is organized as follows:
 │    └── ...additional plugins...
 │
 └── debug/                        ← Debug tools
-     ├── debug_logger.py
-     ├── state_viewer.py
-     └── ...more tools depending on config
+     ├── debug_menu.py
+     ├── debug_inspector.py
+     └── ...
 ```
 
 ---
 
 # Running the CLI
 
-From the project root:
+Move the cli_main to your main project's root:
 
 ```
-python main.py
+python cli_main.py
 ```
 
 The CLI automatically loads your menu tree and uses the UI manager for consistent formatting.
@@ -116,15 +116,6 @@ choices = multi_select("Pick all that apply:", ["A", "B", "C"])
 
 ---
 
-# Included QoL Plugins
-
-{{plugin_docs}}
-
-All plugins live in the `plugins/` directory.  
-If you enabled additional plugin modules during generation, they appear here.
-
----
-
 # Extending the CLI
 
 To expand your CLI:
@@ -143,6 +134,6 @@ To expand your CLI:
 
 ---
 
-# 🎉 Happy Building!
+# Happy Building!
 
 Generated with ❤️ by **CLI Toolbox Generator**

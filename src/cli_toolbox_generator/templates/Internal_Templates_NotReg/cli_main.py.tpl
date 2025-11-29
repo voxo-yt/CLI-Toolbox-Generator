@@ -1,4 +1,4 @@
-from ..ui.ui_manager import UIManager
+from {{root_slug}}.ui.ui_manager import UIManager
 {{menu_imports}}
 
 PARENTS = {
@@ -37,7 +37,7 @@ def main():
             continue
 
         if result == "-1":
-            from debug.debug_menu import run_debug_menu
+            from {{root_slug}}.debug.debug_menu import run_debug_menu
             run_debug_menu(ui, menus, menu)
             continue
 

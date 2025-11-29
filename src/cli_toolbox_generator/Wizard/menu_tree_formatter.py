@@ -1,5 +1,5 @@
 from typing import List
-from cli_toolbox_generator.Models.menu_model import MenuNode
+from cli_toolbox_generator.models.menu_model import MenuNode
 
 
 class MenuTreeFormatter:

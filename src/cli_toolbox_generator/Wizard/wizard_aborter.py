@@ -1,6 +1,6 @@
 import os
 import shutil
-from cli_toolbox_generator.Utilities.ui_tools import clear_screen, print_warning, print_error
+from cli_toolbox_generator.utilities.ui_tools import clear_screen, print_warning, print_error
 
 
 class Aborter:

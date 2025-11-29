@@ -1,6 +1,6 @@
 from typing import List, Optional
-from cli_toolbox_generator.Utilities.text_tools import slugify
-from cli_toolbox_generator.Models.command_model import CommandNode
+from cli_toolbox_generator.utilities.text_tools import slugify
+from cli_toolbox_generator.models.command_model import CommandNode
 
 class MenuNode:
     def __init__(self, name: str, parent: Optional["MenuNode"] = None):

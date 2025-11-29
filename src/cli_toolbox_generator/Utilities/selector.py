@@ -1,5 +1,5 @@
 import os
-from cli_toolbox_generator.Utilities.input import read_key, UP, DOWN, SPACE, ENTER, ESC, CHAR
+from cli_toolbox_generator.utilities.input import read_key, UP, DOWN, SPACE, ENTER, ESC, CHAR
 
 
 def clear():

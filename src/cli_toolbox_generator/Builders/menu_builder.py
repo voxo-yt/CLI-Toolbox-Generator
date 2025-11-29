@@ -1,6 +1,6 @@
-from cli_toolbox_generator.Models.menu_model import MenuNode
-from cli_toolbox_generator.Utilities.selector import select
-from cli_toolbox_generator.Utilities.ui_tools import (
+from cli_toolbox_generator.models.menu_model import MenuNode
+from cli_toolbox_generator.utilities.selector import select
+from cli_toolbox_generator.utilities.ui_tools import (
     builder_header,
     print_title,
     print_warning,

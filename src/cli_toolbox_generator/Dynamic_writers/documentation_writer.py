@@ -1,6 +1,6 @@
 from pathlib import Path
 from datetime import datetime
-from cli_toolbox_generator.Template_tools.template_writer import TemplateWriter
+from cli_toolbox_generator.template_tools.template_writer import TemplateWriter
 
 
 class DocumentationWriter:

@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from cli_toolbox_generator.Utilities.text_tools import slugify
+from cli_toolbox_generator.utilities.text_tools import slugify
 
 @dataclass
 class CommandNode:

@@ -1,6 +1,6 @@
 from pathlib import Path
-from cli_toolbox_generator.Utilities.text_tools import slugify
-from cli_toolbox_generator.Template_tools.template_writer import TemplateWriter
+from cli_toolbox_generator.utilities.text_tools import slugify
+from cli_toolbox_generator.template_tools.template_writer import TemplateWriter
 
 
 class MenuClassWriter:

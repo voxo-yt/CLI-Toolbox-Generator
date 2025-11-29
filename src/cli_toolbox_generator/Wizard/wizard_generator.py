@@ -1,25 +1,25 @@
 import os
 from pathlib import Path
 
-from cli_toolbox_generator.Wizard.wizard_state import WizardState
-from cli_toolbox_generator.Wizard.wizard_aborter import Aborter
+from cli_toolbox_generator.wizard.wizard_state import WizardState
+from cli_toolbox_generator.wizard.wizard_aborter import Aborter
 
-from cli_toolbox_generator.Builders.menu_builder import MenuTreeBuilder
-from cli_toolbox_generator.Wizard.menu_tree_formatter import MenuTreeFormatter
+from cli_toolbox_generator.builders.menu_builder import MenuTreeBuilder
+from cli_toolbox_generator.wizard.menu_tree_formatter import MenuTreeFormatter
 
-from cli_toolbox_generator.Utilities.ui_tools import (
+from cli_toolbox_generator.utilities.ui_tools import (
     clear_screen,
     print_title,
     print_success,
     print_warning,
     print_error,
 )
-from cli_toolbox_generator.Utilities.selector import select, multi_select
+from cli_toolbox_generator.utilities.selector import select, multi_select
 
-from cli_toolbox_generator.Models.project_model import ProjectConfig
-from cli_toolbox_generator.Utilities.output_manager import OutputManager
-from cli_toolbox_generator.Builders.project_builder import ProjectStructure
-from cli_toolbox_generator.Template_tools.template_scanner import TemplateScanner
+from cli_toolbox_generator.models.project_model import ProjectConfig
+from cli_toolbox_generator.utilities.output_manager import OutputManager
+from cli_toolbox_generator.builders.project_builder import ProjectStructure
+from cli_toolbox_generator.template_tools.template_scanner import TemplateScanner
 
 
 class GeneratorWizard:

@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from typing import Dict, Optional
-from cli_toolbox_generator.Builders.menu_builder import MenuNode
+from cli_toolbox_generator.builders.menu_builder import MenuNode
 
 
 @dataclass

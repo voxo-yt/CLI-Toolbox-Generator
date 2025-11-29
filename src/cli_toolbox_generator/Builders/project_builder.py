@@ -1,11 +1,11 @@
 from pathlib import Path
 
-from cli_toolbox_generator.Dynamic_writers.menu_class_writer import MenuClassWriter
-from cli_toolbox_generator.Dynamic_writers.documentation_writer import DocumentationWriter
-from cli_toolbox_generator.Dynamic_writers.main_writer import MainWriter
+from cli_toolbox_generator.dynamic_writers.menu_class_writer import MenuClassWriter
+from cli_toolbox_generator.dynamic_writers.documentation_writer import DocumentationWriter
+from cli_toolbox_generator.dynamic_writers.main_writer import MainWriter
 
-from cli_toolbox_generator.Template_tools.template_scanner import TemplateScanner
-from cli_toolbox_generator.Template_tools.template_writer import TemplateWriter
+from cli_toolbox_generator.template_tools.template_scanner import TemplateScanner
+from cli_toolbox_generator.template_tools.template_writer import TemplateWriter
 
 
 class ProjectStructure:

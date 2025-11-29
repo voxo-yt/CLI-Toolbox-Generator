@@ -1,4 +1,4 @@
-## ❗ Error Logging & Exception Wrapper
+## Error Logging & Exception Wrapper
 
 This feature provides decorators and helpers that let you wrap functions
 with automatic error catching, logging, and user-friendly messaging.

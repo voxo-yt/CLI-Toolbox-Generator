@@ -1,5 +1,5 @@
-import debug.debug_hooks as hooks
-import debug.debug_tools as tools
+from ..debug import debug_hooks as hooks
+from ..debug import debug_tools as tools
 
 def list_debug_hooks():
     funcs = []

@@ -13,4 +13,8 @@ if SRC_DIR not in sys.path:
 from cli_toolbox_generator.main import main
 
 if __name__ == "__main__":
+    if os.name == 'nt':
+        _ = os.system('cls')
+    else:
+        _ = os.system('clear')
     main()

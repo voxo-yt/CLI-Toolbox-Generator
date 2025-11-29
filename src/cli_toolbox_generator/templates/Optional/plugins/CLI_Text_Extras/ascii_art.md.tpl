@@ -1,4 +1,4 @@
-## 🖼 ASCII Art Helpers
+## ASCII Art Helpers
 
 Adds simple ASCII-styled banners useful for making your CLI feel more polished.
 

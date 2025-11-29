@@ -1,4 +1,4 @@
-## 📝 Lightweight Logging
+## Lightweight Logging
 
 A minimal structured logging helper that prints readable log statements
 without requiring any external dependencies.

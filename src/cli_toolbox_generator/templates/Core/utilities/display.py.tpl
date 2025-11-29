@@ -1,4 +1,4 @@
-from utilities.system import clear_screen
+from ..utilities.system import clear_screen
 
 # ANSI Color Codes
 RESET = "\033[0m"

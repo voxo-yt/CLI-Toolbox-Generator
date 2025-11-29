@@ -1,4 +1,4 @@
-## 🔄 Data Converters
+## Data Converters
 
 This module provides lightweight, safe helpers for working with JSON, CSV,
 and number/string conversions.

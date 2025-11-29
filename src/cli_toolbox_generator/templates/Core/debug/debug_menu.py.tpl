@@ -1,5 +1,5 @@
-from .debug_inspector import list_debug_hooks, list_tools
-from utilities.display import print_success, print_error
+from ..debug_inspector import list_debug_hooks, list_tools
+from ..utilities.display import print_success, print_error
 
 def run_debug_menu(ui, menus, current_menu):
     while True:

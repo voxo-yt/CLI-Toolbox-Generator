@@ -1,16 +1,7 @@
-"""
-Cross-platform low-level key reader.
-
-STANDARDIZED OUTPUT:
-    "UP", "DOWN", "ENTER", "SPACE", "ESC", "debug", "OTHER"
-
-NOTE:
-    UIManager + navigation expect EXACT string:
-        → "debug"   (lowercase)
-"""
-
+# Cross-platform low-level key reader.
 import os
 import sys
+
 
 IS_WINDOWS = os.name == "nt"
 
@@ -20,8 +11,6 @@ else:
     import termios
     import tty
 
-
-# Important return values
 UP = "UP"
 DOWN = "DOWN"
 ENTER = "ENTER"
@@ -32,7 +21,6 @@ OTHER = "OTHER"
 
 
 def read_key():
-    """Return UP/DOWN/ENTER/SPACE/ESC/debug/OTHER"""
     try:
         if IS_WINDOWS:
             return _read_key_windows()
@@ -58,9 +46,9 @@ def _read_key_windows():
     if ch == b"\x1b":
         return ESC
 
-    # DEBUG (d/D) — match raw byte lowercase
+    # DEBUG (d/D)
     if ch.lower() == b"d":
-        return DEBUG   # returns "debug"
+        return DEBUG 
 
     # Arrow keys arrive as two-byte sequences
     if ch in (b"\x00", b"\xe0"):

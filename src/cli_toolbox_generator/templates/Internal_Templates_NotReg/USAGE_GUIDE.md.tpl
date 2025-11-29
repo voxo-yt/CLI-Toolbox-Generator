@@ -15,7 +15,7 @@ This guide walks you through:
 
 ---
 
-# 📁 Project Structure
+# Project Structure
 
 Your generated project is organized as follows:
 
@@ -49,7 +49,7 @@ Your generated project is organized as follows:
 
 ---
 
-# ▶️ Running the CLI
+# Running the CLI
 
 From the project root:
 
@@ -61,7 +61,7 @@ The CLI automatically loads your menu tree and uses the UI manager for consisten
 
 ---
 
-# 🧭 Menu System
+# Menu System
 
 Each menu is represented by its own class:
 
@@ -86,7 +86,7 @@ def cmd_do_something(self):
 
 ---
 
-# 🎨 UI Utilities (UIManager)
+# UI Utilities (UIManager)
 
 Every menu has access to a shared `UIManager` instance:
 
@@ -100,7 +100,7 @@ self.ui.print_kv("Label", "Value")
 
 ---
 
-# 🎯 Selectors: Single & Multi-Pick
+# Selectors: Single & Multi-Pick
 
 Arrow‑key navigation is built-in:
 
@@ -116,7 +116,7 @@ choices = multi_select("Pick all that apply:", ["A", "B", "C"])
 
 ---
 
-# 🔌 Included QoL Plugins
+# Included QoL Plugins
 
 {{plugin_docs}}
 
@@ -125,7 +125,7 @@ If you enabled additional plugin modules during generation, they appear here.
 
 ---
 
-# 🧩 Extending the CLI
+# Extending the CLI
 
 To expand your CLI:
 

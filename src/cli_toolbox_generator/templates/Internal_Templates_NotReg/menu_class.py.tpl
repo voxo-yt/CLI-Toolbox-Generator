@@ -1,7 +1,7 @@
 """Auto-generated menu for {{menu_name}}"""
 
 from typing import Optional, List
-from utilities.display import print_error   # ensure this exists
+from ..display import print_error   # ensure this exists
 
 class {{class_name}}:
 

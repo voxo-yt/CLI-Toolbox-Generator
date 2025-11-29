@@ -1,7 +1,7 @@
 # This file remains only so older templates referencing
 # `utilities.multiselect` do not crash.
 
-from utilities.navigation import (
+from ..utilities.navigation import (
     arrow_multiselect_core,
     parse_number_multiselect as parse_number_multiselect_core,
 )

@@ -1,4 +1,4 @@
-## ⚙️ System Utilities
+## System Utilities
 
 Provides safe, lightweight wrappers for common system-level operations.
 

@@ -1,4 +1,4 @@
-from utilities.display import print_success, print_error
+from ..utilities.display import print_success, print_error
 
 def dump_environment():
     """Show environment diagnostics."""

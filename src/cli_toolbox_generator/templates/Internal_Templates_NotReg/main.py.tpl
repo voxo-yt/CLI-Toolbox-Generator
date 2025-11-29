@@ -1,4 +1,4 @@
-from ui.ui_manager import UIManager
+from ..ui.ui_manager import UIManager
 {{menu_imports}}
 
 PARENTS = {

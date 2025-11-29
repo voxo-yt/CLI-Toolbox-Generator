@@ -25,13 +25,6 @@ class MultiCommand:
 
     # Define selectable options
     def build_options(self):
-        """
-        Return list[str] of items to choose from.
-
-        Examples:
-            return ["Alpha", "Beta", "Gamma"]
-        """
-
         OPTIONS = [
             # TODO: Add your selectable items here:
             "Option A",
@@ -40,7 +33,6 @@ class MultiCommand:
         ]
         return OPTIONS
 
-    # Handle the chosen items
     def run_selected(self, chosen_items):
         """
         chosen_items: list[str]

@@ -1,14 +1,16 @@
-# 📦 CLI Toolbox Generator
+# CLI Toolbox Generator
 
-**A modular, template-driven generator for beautiful, structured Python
-CLIs.** Generate ready-to-use command-line applications for Python in seconds using
-the fully template-driven generator with zero boilerplate.
+**A modular, template-driven generator for pretty, structured Python
+CLIs.** Generate ready-to-use command-line menus for Python in seconds using
+the fully template-driven generator with zero boilerplate. Grab any project you're
+working on, generate a CLI menu, hook it up, and you're good to go!
 
-Looking for an example of this being used? Check the Documents/ !
+Looking for an example of this being used? Check the Documents! Generated projects also
+come with a Usage Guide!
 
 ------------------------------------------------------------------------
 
-## 🚀 Features
+## Features
 
 -   **100% Template-Driven Output**\
     The final project structure is based entirely on `.tpl` files. There's no
@@ -45,7 +47,7 @@ Looking for an example of this being used? Check the Documents/ !
     -   Navigation style
     -   Optional features to include
 
-        These settings fully shape the output directory.
+        These settings fully shape the generated output's directory.
 
 -   **Automatic Menu Tree Generation**\
     Based on user input, the generator creates:
@@ -56,7 +58,8 @@ Looking for an example of this being used? Check the Documents/ !
     -   stubs for each menu option
 
         The stubs act as placeholders where you add your
-        project-specific code either directly or as a method call.
+        project-specific code either directly or as a method call. If you need
+        an example of this process, check documents/ExampleWalkthrough.md
 
 -   **Zero External Dependencies**\
     No external libraries required.
@@ -71,7 +74,7 @@ Looking for an example of this being used? Check the Documents/ !
 
 ------------------------------------------------------------------------
 
-## 📂 Template System (In 20 Seconds)
+## Template System TLDR
 
     templates/
         Core/                 
@@ -93,10 +96,10 @@ Adding a file is as simple as:
 
 ------------------------------------------------------------------------
 
-## 🧠 Why I Made This
+## Why I Made This
 
 I love building small systems, prototypes, data tools, utilities, workflow
-helpers, etc.\
+helpers, etc.
 But every time I start a new project, I spend way too long rebuilding:
 
 -   a good-looking CLI
@@ -135,13 +138,13 @@ is not revolutionary nor inherently that complex, but it is a nice tool.
 
 ------------------------------------------------------------------------
 
-# 📘 What the Generator Actually Produces
+# What the Generator Actually Produces
 
 Depending on your choices during setup, the generator builds:
 
 ------------------------------------------------------------------------
 
-## ✔ Dynamic Menu Trees
+## Dynamic Menu Trees
 
 If you specify multiple menus or submenus, the generator creates:
 
@@ -155,7 +158,7 @@ to worry about tying these together even if they are sub-menus!
 
 ------------------------------------------------------------------------
 
-## ✔ Menu Option Stubs (Where You Add Your Logic)
+## Menu Option Stubs (Where You Add Your Logic)
 
 Each menu contains placeholder methods such as:
 
@@ -169,32 +172,7 @@ let you test out your menu and ensure it works on generation.
 
 ------------------------------------------------------------------------
 
-## ✔ UI Manager
-
-    ui/
-        ui_manager.py
-
-Our manager takes care of everything for your menu's to work cleanly based off
-your selected preferences.
-
-------------------------------------------------------------------------
-
-## ✔ Utility Modules
-
-    utilities/
-        display.py
-        formatting.py
-        input.py
-        multi_command.py
-        navigation.py
-        system.py
-
-These modules provide you with some nice general utilities while also helping
-the menus and navigation work well.
-
-------------------------------------------------------------------------
-
-## ✔ Pre-installed (Optional) QoL Features
+## Pre-installed (Optional) QoL Features
 
 A few of my favorites built in should you choose to enable them:
 
@@ -212,15 +190,7 @@ Includes helpers like:
 
 ------------------------------------------------------------------------
 
-## ✔ Documentation and Main Entrypoint
-
-    main.py
-    documentation/
-        README.md
-
-------------------------------------------------------------------------
-
-## 🛠 Installation
+## Installation
 
 ``` bash
 git clone https://github.com/Urason-Anorsu/CLI-Toolbox-Generator.git
@@ -230,7 +200,7 @@ python cli_gen.py
 
 ------------------------------------------------------------------------
 
-## 🎨 Customization
+## Customization
 
 During generation, you can select:
 
@@ -250,9 +220,9 @@ To customize even further, modify files under:
 
 ------------------------------------------------------------------------
 
-## 🤝 Contributing
+## Contributing
 
-PRs are welcome! Although I'm unsure what could be added.\
+It is unlikely that anything can be added here, build up your own generator's toolbox instead!
 You can add:
 
 -   new feature packs
@@ -262,13 +232,13 @@ You can add:
 
 ------------------------------------------------------------------------
 
-## 📄 License
+## License
 
 MIT License.
 
 ------------------------------------------------------------------------
 
-## ❤️ Attribution
+## Attribution
 
 This project uses the MIT License, so attribution is not required.  
 But if you build something cool from this toolkit, a link back or shoutout would be greatly appreciated!
@@ -276,7 +246,7 @@ Regardless, happy building! I hope this saves you some time.
 
 ------------------------------------------------------------------------
 
-## 🗺️ Road-Map
+## Road-Map / Features To Add
 
 While I don't think I'll make large changes to this project, here is a basic
 road-map of things I'd love to add:

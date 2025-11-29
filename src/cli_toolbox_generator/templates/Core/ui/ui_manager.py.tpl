@@ -1,5 +1,5 @@
 import os
-from utilities.navigation import (
+from ..utilities.navigation import (
     highlight,
     arrow_select_core,
     arrow_multiselect_core,

@@ -1,6 +1,6 @@
-from utilities.input import read_key
+from ..utilities.input import read_key
 
-# Feature basic color support in-case of failure to render color helper
+# Basic color support in-case of failure to render color helper
 RESET = "\033[0m"
 CYAN = "\033[36m"
 
@@ -24,13 +24,6 @@ def highlight(label: str, style: str = "pointer", use_color: bool = True) -> str
     return L
 
 def arrow_select_core(count: int, *, debug_enabled: bool = False):
-    """
-    States:
-        ("move", idx)
-        ("enter", idx)
-        ("esc", idx)
-        ("debug", idx)
-    """
     index = 0
     yield ("move", index)
 

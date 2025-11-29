@@ -1,4 +1,4 @@
-## 🧰 Extended UI Helpers
+## Extended UI Helpers
 
 The UI Extras package adds higher-level formatting and input helpers to your CLI.
 

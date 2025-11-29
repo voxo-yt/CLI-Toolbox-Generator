@@ -5,6 +5,11 @@ CLIs.** Generate ready-to-use command-line menus for Python in seconds using
 the fully template-driven generator with zero boilerplate. Grab any project you're
 working on, generate a CLI menu, hook it up, and you're good to go!
 
+**NOTE:** Due to how Python deals with imports, when hooking up your generated CLI to
+bigger projects, pay attention to absolute vs relative imports. An easy solution is to
+use your CLI's main with absolute imports then import and call the CLI's main from a project
+root level.
+
 Looking for an example of this being used? Check the Documents! Generated projects also
 come with a Usage Guide!
 
@@ -25,7 +30,7 @@ come with a Usage Guide!
     -   Project structure
 
 -   **Built-In Optional QoL Plugin Packs**\
-    Usable immediately upon download. No setup required.\
+    Usable immediately upon download. No setup required.
     Includes optional features such as:
     
     -   basic logging tools

